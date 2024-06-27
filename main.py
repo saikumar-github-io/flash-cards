@@ -54,7 +54,7 @@ word_text = canvas.create_text(400, 253, text="Word", font=("Ariel", 30, "bold")
 canvas.grid(row=0, column=0, columnspan=2)
 
 right_btn_img = PhotoImage(file="./images/right.png")
-right_button = Button(image=right_btn_img, highlightthickness=0, command=lambda: [next_card(), right()])
+right_button = Button(image=right_btn_img, highlightthickness=0, command=right)
 right_button.grid(row=1, column=1)
 
 left_btn_img = PhotoImage(file="./images/wrong.png")
